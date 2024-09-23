@@ -1,0 +1,103 @@
+.chess-game-board {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.chess-grid-alphabet-horizontal-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.chess-grid-alphabet-horizontal-items {
+  text-align: center;
+  line-height: 12px;
+  font-size: 10px;
+  height: 12px;
+  width: 12px;
+  margin-left: 1px;
+  background-color: white;
+}
+
+.dragging {
+  opacity: 0.3;
+}
+
+.dragOverColor {
+  background-color: lightgreen;
+}
+
+.chess-game-space-black {
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid;
+  margin-left: 1px;
+  background-color: #ccab7c;
+}
+
+.chess-game-space-white {
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid;
+  margin-left: 1px;
+  background-color: white;
+}
+
+.game-row-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+}
+
+.game-row-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+}
+
+.game-row-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+}
+
+.game-row-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+}
+
+.game-row-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+}
+
+.game-row-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+}
+
+.game-row-8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="chess-game-board">
+      <div class="chess-grid-alphabet-horizontal-container">
+        <span class="chess-grid-alphabet-horizontal-items">a</span>
+        <span class="chess-grid-alphabet-horizontal-items">b</span>
+        <span class="chess-grid-alphabet-horizontal-items">c</span>
+        <span class="chess-grid-alphabet-horizontal-items">d</span>
+        <span class="chess-grid-alphabet-horizontal-items">e</span>
+        <span class="chess-grid-alphabet-horizontal-items">f</span>
+        <span class="chess-grid-alphabet-horizontal-items">g</span>
+        <span class="chess-grid-alphabet-horizontal-items">h</span>
+      </div>
+
+      <div class="game-row-1">
+        <span style="font-size: small; margin-right: 2px">8</span>
+        <span class="chess-game-space-black" draggable="true" id="gameplayTest">♜</span>
+        <span class="chess-game-space-white" draggable="true">♞</span>
+        <span class="chess-game-space-black" draggable="true">♝</span>
+        <span class="chess-game-space-white" draggable="true">♛</span>
+        <span class="chess-game-space-black" draggable="true">♚</span>
+        <span class="chess-game-space-white" draggable="true">♝</span>
+        <span class="chess-game-space-black" draggable="true">♞</span>
+        <span class="chess-game-space-white" draggable="true">♜</span>
+        <span style="font-size: small; margin-left: 2px">8</span>
+      </div>
+
+      <div class="game-row-2">
+        <span style="font-size: small; margin-right: 2px">7</span>
+        <span class="chess-game-space-white" draggable="true">♟</span>
+        <span class="chess-game-space-black" draggable="true">♟</span>
+        <span class="chess-game-space-white" draggable="true">♟</span>
+        <span class="chess-game-space-black" draggable="true">♟</span>
+        <span class="chess-game-space-white" draggable="true">♟</span>
+        <span class="chess-game-space-black" draggable="true">♟</span>
+        <span class="chess-game-space-white" draggable="true">♟</span>
+        <span class="chess-game-space-black" draggable="true">♟</span>
+        <span style="font-size: small; margin-left: 2px">7</span>
+      </div>
+
+      <div class="game-row-3">
+        <span style="font-size: small; margin-right: 2px">6</span>
+        <span class="chess-game-space-black" draggable="true" id = "6A"></span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span style="font-size: small; margin-left: 2px">6</span>
+      </div>
+
+      <div class="game-row-4">
+        <span style="font-size: small; margin-right: 2px">5</span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span style="font-size: small; margin-left: 2px">5</span>
+      </div>
+      <div class="game-row-5">
+        <span style="font-size: small; margin-right: 2px">4</span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span style="font-size: small; margin-left: 2px">4</span>
+      </div>
+      <div class="game-row-6">
+        <span style="font-size: small; margin-right: 2px">3</span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span class="chess-game-space-white" draggable="true"></span>
+        <span class="chess-game-space-black" draggable="true"></span>
+        <span style="font-size: small; margin-left: 2px">3</span>
+      </div>
+      <div class="game-row-7">
+        <span style="font-size: small; margin-right: 2px">2</span>
+        <span class="chess-game-space-black" draggable="true">♙</span>
+        <span class="chess-game-space-white" draggable="true">♙</span>
+        <span class="chess-game-space-black" draggable="true">♙</span>
+        <span class="chess-game-space-white" draggable="true">♙</span>
+        <span class="chess-game-space-black" draggable="true">♙</span>
+        <span class="chess-game-space-white" draggable="true">♙</span>
+        <span class="chess-game-space-black" draggable="true">♙</span>
+        <span class="chess-game-space-white" draggable="true">♙</span>
+        <span style="font-size: small; margin-left: 2px">2</span>
+      </div>
+      <div class="game-row-8">
+        <span style="font-size: small; margin-right: 2px">1</span>
+        <span class="chess-game-space-white" draggable="true">♖</span>
+        <span class="chess-game-space-black" draggable="true">♘</span>
+        <span class="chess-game-space-white" draggable="true">♗</span>
+        <span class="chess-game-space-black" draggable="true">♕</span>
+        <span class="chess-game-space-white" draggable="true">♔</span>
+        <span class="chess-game-space-black" draggable="true">♗</span>
+        <span class="chess-game-space-white" draggable="true">♘</span>
+        <span class="chess-game-space-black" draggable="true">♖</span>
+        <span style="font-size: small; margin-left: 2px">1</span>
+      </div>
+      <div class="chess-grid-alphabet-horizontal-container">
+        <span class="chess-grid-alphabet-horizontal-items">a</span>
+        <span class="chess-grid-alphabet-horizontal-items">b</span>
+        <span class="chess-grid-alphabet-horizontal-items">c</span>
+        <span class="chess-grid-alphabet-horizontal-items">d</span>
+        <span class="chess-grid-alphabet-horizontal-items">e</span>
+        <span class="chess-grid-alphabet-horizontal-items">f</span>
+        <span class="chess-grid-alphabet-horizontal-items">g</span>
+        <span class="chess-grid-alphabet-horizontal-items">h</span>
+      </div>
+    </div>
+  </body>
+</html>
